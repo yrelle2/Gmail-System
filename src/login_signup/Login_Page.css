@@ -1,0 +1,60 @@
+/* Container fills the viewport and centers its content */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;      /* full viewport height */
+  background-color: #f0f2f5;  /* softer background than blue */
+}
+
+/* The login box */
+.box {
+  background-color: white;
+  padding: 2rem 2.5rem;    /* internal spacing */
+  border-radius: 8px;       /* rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* subtle shadow */
+  width: 100%;
+  max-width: 400px;         /* limits width on large screens */
+  text-align: center;       /* centers the heading */
+}
+
+.box h1 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 2rem;
+}
+
+/* Style form inputs */
+.box input[type="text"],
+.box input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;   /* includes padding in width */
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+  outline: none;
+  border-color: #4CAF50;    /* green highlight on focus */
+}
+
+/* Submit button */
+.box input[type="submit"] {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.box input[type="submit"]:hover {
+  background-color: #45a049;
+}
